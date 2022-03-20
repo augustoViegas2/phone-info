@@ -14,12 +14,4 @@ describe('AppModule (e2e)', () => {
     app = moduleFixture.createNestApplication();
     await app.init();
   });
-
-  it('/healthcheck (GET)', () => {
-    const expeted = '{"status":"UP"}';
-    return request(app.getHttpServer())
-      .get('/healthcheck')
-      .expect(200)
-      .expect(expeted);
-  });
 });
