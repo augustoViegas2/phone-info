@@ -1,4 +1,6 @@
-export const countryInfo = [
+import { CountryInfo } from "../types/country-info";
+
+export const countryInfo: CountryInfo[] = [
   { countryCode: '93', name: 'Afeganistão' },
   { countryCode: '355', name: 'Albânia' },
   { countryCode: '213', name: 'Algéria' },

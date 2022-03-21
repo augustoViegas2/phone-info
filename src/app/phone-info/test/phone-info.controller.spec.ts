@@ -22,8 +22,8 @@ describe('PhoneInfoController', () => {
         phoneInfo: {
           countryCode: '55',
           phone: phone.substring(2),
+          fullPhone: phone,
         },
-        fullPhone: phone,
         country: 'Brasil'
       }
       expect(await phoneInfoController.getPhoneInfo(phone)).toMatchObject(expected);
